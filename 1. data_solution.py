@@ -38,7 +38,7 @@ print(user)
 print(user.email)
 print(user.phone)
 
-# Let's use the json.load() method to read a file containing JSON object
+# Let's use the json.loads() method to read a file containing JSON object
 
 users_list = []
 with open('1. data.json', 'r') as json_file:
