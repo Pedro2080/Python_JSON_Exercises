@@ -19,7 +19,6 @@ json_t = json.dumps(python_T)
 json_f = json.dumps(python_F)
 json_n = json.dumps(python_N)
 
-
 print("json obj : ", json_obj)
 print("jason list : ", json_list)
 print("json string : ", json_str)
