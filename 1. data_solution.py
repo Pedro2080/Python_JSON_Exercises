@@ -33,6 +33,7 @@ json_string_ = '''{
     "address": "AV. New York-USA"
 }'''
 
+print(type(json_string_))
 user = User.from_json(json_string_)
 print(user)
 print(user.email)
@@ -42,7 +43,7 @@ print(user.phone)
 
 users_list = []
 with open('1. data.json', 'r') as json_file:
-    user_data = json.loads(json_file.read())
+    user_data = json.load(json_file)
 
     for x in user_data:
         users_list.append(User(**x))
