@@ -9,7 +9,7 @@ def dictionary():
 
     sorted_obj = dict(sorted(key_value.items(), key=lambda keyval: (keyval[0], keyval[1])))
 
-    print(f"Sorted by key value: {json.dumps(sorted_obj)}")
+    print(f"Sorted by key value: {json.dumps(sorted_obj, indent=4)}")
 
 
 def main():
